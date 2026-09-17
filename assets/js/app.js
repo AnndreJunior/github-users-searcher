@@ -62,9 +62,12 @@ searchUserForm.addEventListener("submit", async (event) => {
   clearNotifications();
 
   const username = usernameInput.value;
-  if (!username) alert("Preencha o input");
 
   try {
+    if (!username) {
+      throw new Error("Preencha o input");
+    }
+
     const { name, avatarUrl, followers, following, profileUrl, publicRepos } =
       await searchUser(username);
 
@@ -106,6 +109,7 @@ searchUserForm.addEventListener("submit", async (event) => {
     userInfoArticle.innerHTML = userInfoHtml;
   } catch (error) {
     addErrorNotification(error.message);
+    setTimeout(clearNotifications, 4000);
   }
 });
 
