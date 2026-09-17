@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background: #c982eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  color: #fff;
+  margin-bottom: 5px;
+  width: 25%;
+}
+
+form {
+  border-bottom: 3px solid #fff;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.85;
+  border-bottom-color: #fff;
+}
+
+a:active {
+  transform: scale(0.98);
+}
+
+.user-info {
+  margin-top: 20px;
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.article-header img {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.github-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
