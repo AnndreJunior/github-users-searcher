@@ -97,3 +97,26 @@ a:active {
   opacity: 1;
   text-decoration: underline;
 }
+
+.notification {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-left: 4px;
+  width: 310px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification span {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.error-notification {
+  background-color: #ffb0b0;
+  color: #ff3737;
+}
+.error-notification span {
+  background-color: #f48c8c;
+}
