@@ -16,7 +16,7 @@ function addErrorNotification(error) {
   notification.setAttribute("role", "alert");
 
   const closeNotificationBtn = document.createElement("span");
-  closeNotificationBtn.classList.add("close-notificaton-btn");
+  closeNotificationBtn.classList.add("close-notification-btn");
   closeNotificationBtn.setAttribute("role", "button");
   closeNotificationBtn.setAttribute("aria-label", "Fechar");
 
